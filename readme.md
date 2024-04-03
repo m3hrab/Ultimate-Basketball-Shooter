@@ -1,3 +1,5 @@
+# The Ultimate Basketball shooter 
+
 #### Game description
 The game is a two-dimensional basketball simulation in which the player controls a basketball that must be shot into a hoop. The game consists of a fixed basket, a moving basketball and a static backdrop. The challenge of the game lies in the accuracy of the throw to score points. The game is designed to be simple and intuitive, offering an enjoyable playing experience.
 
@@ -32,8 +34,8 @@ The game is a two-dimensional basketball simulation in which the player controls
 - On-screen display of the current score so players can track their progress.
 
 #### Required modules
-- Pygame: A Python library for creating 2D games.
-- Math: To perform the mathematical calculations required to simulate the ball's trajectory.
+- `Pygame`: A Python library for creating 2D games.
+- `Math`: To perform the mathematical calculations required to simulate the ball's trajectory.
 - `Random`: To generate random positions for the ball during level changes.
 
 #### Code structure

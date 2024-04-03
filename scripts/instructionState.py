@@ -3,7 +3,7 @@ from scripts.button import Button
 from scripts.gameState import GameState
 from constants import SCREEN_WIDTH, SCREEN_HEIGHT
 
-class SettingsState(GameState):
+class InstructionState(GameState):
     """Settings menu of the Basketball shooter"""
 
     def __init__(self, screen):
@@ -12,7 +12,7 @@ class SettingsState(GameState):
         self.screen = screen
 
         # Load the background image and get its rect.
-        self.background_img = pygame.image.load('assets/images/settings.png')
+        self.background_img = pygame.image.load('assets/images/instructions.png')
         self.background_img = pygame.transform.scale(self.background_img, (SCREEN_WIDTH, SCREEN_HEIGHT))
         self.background_img_rect = self.background_img.get_rect()
 

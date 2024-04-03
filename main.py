@@ -2,6 +2,7 @@ import pygame
 from constants import *
 from scripts.menuState import MenuState
 from scripts.settingsState import SettingsState
+from scripts.instructionState import InstructionState
 
 def main():
     pygame.init()
@@ -13,6 +14,8 @@ def main():
     menu_state = MenuState(screen)
     # SettingsState object
     settings_state = SettingsState(screen)
+    # InstructionState object
+    instruction_state = InstructionState(screen)
 
 
     current_state = menu_state
@@ -28,7 +31,7 @@ def main():
         elif next_state == 'game':
             pass 
         elif next_state == 'instructions':
-            pass
+            current_state = instruction_state
         elif next_state == 'settings':
             current_state = settings_state
     
